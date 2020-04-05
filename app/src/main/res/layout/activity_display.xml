@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="100dp"
+    tools:context=".DisplayActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Name"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/outName"
+                android:text="Column Two"
+                android:gravity="right"
+                android:padding="3dip"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="Phone"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/outPhone"
+                android:text="Column Two"
+                android:gravity="right"
+                android:padding="3dip"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_marginTop="40dp"
+        android:stretchColumns="0,1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <Button
+                android:id="@+id/prevBTN"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Previous"/>
+            <Button
+                android:id="@+id/nextBTN"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Next"/>
+        </TableRow>
+    </TableLayout>
+
+        <Button
+            android:id="@+id/homeBTN"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Home"/>
+
+</LinearLayout>
